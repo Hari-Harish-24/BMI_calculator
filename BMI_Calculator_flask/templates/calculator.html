@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI-Calculator</title>
+        
+    <link rel="stylesheet" href='{{ url_for("static",filename="main.css") }}' type="text/css">
+
+</head>
+
+<body class="main">
+    <center>
+        <h1>BMI-Calculator</h1><hr>
+        <div  class="form">
+            <br>
+            <form action="/" method="post">
+                WEIGHT:
+                <input type="text" name="uweight" placeholder="Enter your Weight in kg"><br><br>
+                HEIGHT:
+                <input type="text" name="uheight" placeholder="Enter your Height in cm"><br><br>
+                <button type="submit" value="submit">submit</button><br><br>
+            </form>
+        </div>
+        <hr>
+        <div>
+            {% if bmi %}
+            <p style="border: darkorange;">Your BMI is {{bmi}}</p>
+            {% endif %}
+        </div>
+
+        <div class="img">
+            <img src="https://static.vecteezy.com/system/resources/previews/005/905/467/original/bmi-classification-chart-measurement-man-set-male-body-mass-index-infographic-with-weight-status-from-underweight-to-severely-obese-medical-body-mass-control-graph-eps-illustration-vector.jpg" alt="BMI-Chart" width="600px">
+        </div>
+    </center>
+
+</body>
+</html>

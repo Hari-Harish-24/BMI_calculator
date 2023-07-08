@@ -1,0 +1,14 @@
+.form{
+    border-style: dashed;
+    background-color: antiquewhite;
+}
+.main{
+    background-color: cadetblue;
+}
+h1{
+    color:black;
+    padding: auto;
+}
+.img{
+    background-image: url();
+}
